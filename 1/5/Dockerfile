@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-ENV PLAY_VERSION "1.5.1"
+ENV PLAY_VERSION "1.5.2"
 ENV PLAY_HOME /opt/play/play-${PLAY_VERSION}
 
 LABEL maintainer.name="Anthony PERIQUET"
@@ -13,7 +13,7 @@ RUN mkdir -p /opt/play && cd /opt/play && \
 	# Download play framework
 	wget https://downloads.typesafe.com/play/${PLAY_VERSION}/play-${PLAY_VERSION}.zip && \
 	# Extract and clean archive
-	unzip play-${PLAY_VERSION}.zip && rm play-${PLAY_VERSION}.zip && \
+	unzip -q play-${PLAY_VERSION}.zip && rm play-${PLAY_VERSION}.zip && \
 	# Set execution
 	chmod +x /opt/play/play-${PLAY_VERSION}/play
 # Create application folder
@@ -27,7 +27,7 @@ HEALTHCHECK --interval=30s --timeout=3s \
 	CMD curl --fail http://localhost:9000/ || exit 1
 
 # Define entrypoint
-ENTRYPOINT ["/opt/play/play-1.5.1/play"]
+ENTRYPOINT ["/opt/play/play-1.5.2/play"]
 # Define command (entrypoint parameters)
 #	- Start application located in /app directory
 #	- Install dependencies on start

@@ -4,8 +4,9 @@
 
 ## Supported tags
 
-* `1`, `1.5`, `1.5.0` ([Dockerfile](https://github.com/xylphid/docker-play/blob/master/1/5/Dockerfile))
-* `latest`, `1.5-slim`, `1.5.0-slim`, `1.5-slim-jdk11`, `1.5.0-slim-jdk11` ([Dockerfile](https://github.com/xylphid/docker-play/blob/master/1/5-slim/Dockerfile))
+* `1`, `1.5`, `1.5.2` ([Dockerfile](https://github.com/xylphid/docker-play/blob/master/1/5/Dockerfile))
+* `latest`, `1.5-slim`, `1.5.2-slim`, `1.5-slim-jdk11`, `1.5.2-slim-jdk11` ([Dockerfile](https://github.com/xylphid/docker-play/blob/master/1/5-slim/Dockerfile))
+* `1-alpine`, `1.5-alpine`, `1.5.2-alpine`, `1.5-alpine-jdk12`, `1.5.2-alpine-jdk12` ([Dockerfile](https://github.com/xylphid/docker-play/blob/master/1/5-alpine/Dockerfile))
 * `1.4`, `1.4.4` ([Dockerfile](https://github.com/xylphid/docker-play/blob/master/1/4/Dockerfile))
 * `1.4-alpine`, `1.4.4-alpine` ([Dockerfile](https://github.com/xylphid/docker-play/blob/master/1/4-alpine/Dockerfile))
 
