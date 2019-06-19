@@ -1,6 +1,6 @@
 FROM openjdk:11
 
-ENV PLAY_VERSION "1.5.2"
+ENV PLAY_VERSION "1.5.3"
 ENV PLAY_HOME /opt/play/play-${PLAY_VERSION}
 
 LABEL maintainer.name="Anthony PERIQUET"
@@ -27,7 +27,7 @@ HEALTHCHECK --interval=30s --timeout=3s \
 	CMD curl --fail http://localhost:9000/ || exit 1
 
 # Define entrypoint
-ENTRYPOINT ["/opt/play/play-1.5.2/play"]
+ENTRYPOINT ["/opt/play/play-1.5.3/play"]
 # Define command (entrypoint parameters)
 #	- Start application located in /app directory
 #	- Install dependencies on start
