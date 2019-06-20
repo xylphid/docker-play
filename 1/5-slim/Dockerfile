@@ -10,7 +10,7 @@ LABEL description="Play Framework v${PLAY_VERSION}"
 
 # Play Framework installation
 RUN apt update && \
-	apt install -y --no-install-recommends curl python && \
+	apt install -y --no-install-recommends curl python unzip && \
 	rm -rf /var/lib/apt/lists/* && \
 	mkdir -p /opt/play && cd /opt/play && \
 	# Download play framework
